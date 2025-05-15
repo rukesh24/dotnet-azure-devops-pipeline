@@ -25,9 +25,5 @@ The Azure DevOps pipeline is defined in `.azure-pipelines/azure-pipelines.yml`.
 
 ![pipeline-architecture](images/devops-pipeline-diagram.png)
 
-## 📝 Notes
-
-This is a pretend-deployment project meant for portfolio purposes only.
-
 ---
 👤 Author: [Rukesh Dasari](https://github.com/rukesh24)
