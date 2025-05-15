@@ -1,0 +1,21 @@
+
+trigger:
+- main
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '6.x.x'
+
+- script: dotnet build --configuration $(buildConfiguration)
+  displayName: 'Build project'
+
+- script: dotnet test --no-restore --verbosity normal
+  displayName: 'Run tests'
